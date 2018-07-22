@@ -1,0 +1,9 @@
+<div class="card border-primary mb-3" style="max-width: 80rem;">
+    <div class="card-header">{{cardId}} - {{itemCard.name}} 
+        <button type="button" class="close" data-dismiss="modal" 
+            aria-hidden="true" (click)="removeCard()">×</button></div>
+    <div class="card-body">
+        <h4 class="card-title">Price is Rs. {{itemCard.price}}</h4>
+        <p class="card-text">{{itemCard.desc}}</p>
+    </div>
+</div>

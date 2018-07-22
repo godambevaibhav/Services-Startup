@@ -1,0 +1,13 @@
+<h1>Custom event and property</h1>
+<div class="container">
+    
+    <!--<app-add-item (itemAddedEvent)="updateItems($event)">
+    </app-add-item>-->
+     <app-add-item></app-add-item>
+    <hr>
+    
+    <app-item-card *ngFor="let item of items; let cardId = index" 
+        [itemCard]="item" [cardId]="cardId"
+        (cardRemoveEvent) = "removeItem($event)">
+    </app-item-card>
+</div>
